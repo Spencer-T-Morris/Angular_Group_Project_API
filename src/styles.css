@@ -1,2 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+
 @import url(https://bootswatch.com/4/solar/bootstrap.min.css);
+
+.container{
+    display: flex;
+}
+
+.btn-warning{
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.btn-primary{
+    border-radius: 5px;
+    margin-right: 35px;
+    padding: 15px;
+}
+
+.search{
+    margin-right: 10px;
+}
