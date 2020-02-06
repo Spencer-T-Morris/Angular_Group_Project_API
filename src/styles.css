@@ -34,3 +34,14 @@
 .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    min-width: 25vw;
+    min-height: 25vw;
+    margin: 30px;
+    padding: .5rem;
+    width: 28%;
+}
