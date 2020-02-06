@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Movies } from '../movies';
 
 @Component({
   selector: 'app-watchlist-page',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./watchlist-page.component.css']
 })
 export class WatchlistPageComponent implements OnInit {
-
+@Input()
+  add: Movies;
+@Input()
+  watchList : Movies[] =[];
+@Output() newMovie= new EventEmitter<any>()
   constructor() { }
 
   ngOnInit() {
   }
-
+ addWatchList(){
+  //this.newMovie.emit({add: Movies.data})
+ }
 }
