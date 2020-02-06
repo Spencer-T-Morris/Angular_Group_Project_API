@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 <div class="card_container">
     <div class="card" *ngFor="let post of posts">
+        <i class="material-icons">favorite</i>
         <h1>{{post.title}}</h1>
         <img src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" class="movie_poster"/>
-    </div>    
-=======
-<div class="card" *ngFor="let post of posts">
-    <h1>{{post.title}}</h1>
-    <img src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" class="movie_poster"/>
-    <button>add to watchList</button>
->>>>>>> b3c1b0f9a81e05aa9dcd0ffe14ede372a2f5410c
+    </div>
 </div>
+

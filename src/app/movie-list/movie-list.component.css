@@ -4,6 +4,13 @@
     flex-wrap: wrap;
 }
 
+.material-icons {
+    margin-left: auto;
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
 .card {
     display: flex;
     justify-content: center;
