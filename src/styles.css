@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(https://bootswatch.com/4/solar/bootstrap.min.css);
+
+.card {
+    display: flex;
+    justify-content: center;
+    min-width: 25vw;
+    min-height: 25vw;
+    margin: 30px;
+    padding: .5rem;
+    width: 28%;
+}
