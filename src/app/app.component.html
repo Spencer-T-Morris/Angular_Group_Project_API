@@ -1,9 +1,8 @@
 <nav class="alert alert-info container">
     <h1>Movies Out in Theater</h1>
-    <button type="button" class="btn btn-warning">My Favorites</button>
-   
+    <button>My Favorites</button>
     <div>
-        <button type="button" class="btn btn-primary">Criteria</button>
+        <button (click)="dropdown()" class="dropButton">Criteria</button>
     </div>
 </nav>
 <app-search-criteria></app-search-criteria>
