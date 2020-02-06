@@ -1,0 +1,12 @@
+.card {
+    min-width: 25vw;
+    min-height: 25vw;
+    margin: 1rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.movie_poster {
+    max-width: 25vw;
+}
