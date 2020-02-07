@@ -15,10 +15,15 @@ export class MovieListComponent implements OnInit {
   @Input()
   movies : Movies[] =[];
 
+  @Input()
+  open : boolean = false;
+
   constructor(public service: MoviesService) { }
 
   ngOnInit(): void {
     this.service.getMovies();
   }
+
+
 
 }

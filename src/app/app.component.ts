@@ -16,4 +16,11 @@ export class AppComponent {
   fetchMovies() {
     this.service.getMovies();
   }
+  showOnStart = true;
+  show = false;
+  appear(){
+    this.show=!this.show;
+    this.showOnStart=!this.showOnStart;
+  }
 }
+
