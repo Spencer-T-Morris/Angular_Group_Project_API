@@ -11,7 +11,6 @@ import { MoviesService } from './movies.service';
 export class AppComponent {
   title = 'movies-api';
 
-
   constructor(public service: MoviesService) { }
 
   fetchMovies() {
@@ -22,7 +21,6 @@ export class AppComponent {
   appear(){
     this.show=!this.show;
     this.showOnStart=!this.showOnStart;
-
   }
 }
 
