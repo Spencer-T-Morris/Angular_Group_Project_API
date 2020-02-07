@@ -12,6 +12,12 @@
     background-color: rgba(238, 232, 213, 0.125);
     color:white;
     border:none;
+    background: none;
+}
+
+.favorite {
+    border: none;
+    background: none;
 }
 
 .card {
