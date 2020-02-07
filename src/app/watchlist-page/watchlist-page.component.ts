@@ -8,15 +8,16 @@ import { MoviesService } from '../movies.service'
 })
 export class WatchlistPageComponent implements OnInit {
   @Input()
-  posts : Movies;
+  posts : any;
 
   @Input()
   movies : Movies[]=[];
   watchlist: Movies[]=[];
-  constructor(public service: MoviesService) { }
+  constructor(public service: MoviesService) { 
+  }
 
   ngOnInit(): void {
-    // this.service.getMovies().subscribe( (data : any) => this.posts = data.results);
+    this.posts=this.service.watchList
   }
  
 }

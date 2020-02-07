@@ -24,6 +24,8 @@ export class MovieListComponent implements OnInit {
     this.service.getMovies();
   }
 
-
+  addMovie(post){
+    this.service.addToWatchList(post)
+  }
 
 }
