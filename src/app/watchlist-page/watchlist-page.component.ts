@@ -18,7 +18,5 @@ export class WatchlistPageComponent implements OnInit {
   ngOnInit(): void {
     this.service.getMovies().subscribe( (data : any) => this.posts = data.results);
   }
-  addMovie(){
-    
-  }
+ 
 }
