@@ -1,6 +1,6 @@
 <nav class="alert alert-info container">
     <h1>Movies Out in Theater</h1>
-    <button type="button" class="btn btn-warning">My Favorites</button>
+    <button type="button" class="btn btn-warning" (click)="appear()">My Favorites</button>
     <div class="dropdown"> 
         <button (click)="dropdown()" type="button" class="dropdown dropButton btn btn-primary">Criteria</button>
         <div class="dropdown-content dropdown-menu">
@@ -56,6 +56,7 @@
         </div>
     </div>
 </nav>
+<app-watchlist-page *ngIf="show"></app-watchlist-page>
 <app-search-criteria></app-search-criteria>
 
-<app-movie-list></app-movie-list>
+<app-movie-list *ngIf="showOnStart"></app-movie-list>
