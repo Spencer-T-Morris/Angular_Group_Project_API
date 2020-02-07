@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,} from '@angular/core';
 import { Movies } from '../movies';
 import { MoviesService } from '../movies.service'
 
@@ -17,6 +17,7 @@ export class MovieListComponent implements OnInit {
 
   @Input()
   open : boolean = false;
+  
 
   constructor(public service: MoviesService) { }
 
@@ -24,6 +25,8 @@ export class MovieListComponent implements OnInit {
     this.service.getMovies().subscribe( (data : any) => this.posts = data.results);
   }
 
-
+  addMovie(post){
+    this.service.addToWatchList(post)
+  }
 
 }
