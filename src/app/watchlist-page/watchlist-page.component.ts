@@ -16,7 +16,7 @@ export class WatchlistPageComponent implements OnInit {
   constructor(public service: MoviesService) { }
 
   ngOnInit(): void {
-    this.service.getMovies().subscribe( (data : any) => this.posts = data.results);
+    // this.service.getMovies().subscribe( (data : any) => this.posts = data.results);
   }
  
 }
