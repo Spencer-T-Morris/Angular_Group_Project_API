@@ -18,6 +18,7 @@ export class AppComponent {
   fetchMovies() {
     this.service.getMovies();
   }
+  
   showOnStart = true;
   show = false;
   appear(){
