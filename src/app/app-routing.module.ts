@@ -11,15 +11,15 @@ const routes: Routes = [
     component: AppComponent
   },
   {
-    path: 'home',
+    path: 'watchlist',
     component: WatchlistPageComponent
   },
   {
-    path: 'home',
+    path: 'searchcriteria',
     component: SearchCriteriaComponent
   },
   {
-    path: 'home',
+    path: 'movielist',
     component: MovieListComponent
   }
 ];
