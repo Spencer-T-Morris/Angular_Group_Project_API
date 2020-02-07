@@ -11,8 +11,9 @@ export class MoviesService {
   movies = [];
 
   isGerman : boolean = false;
-  voteLow : number = 0;
-  
+  lowVote : boolean = false;
+  highVote : boolean = false;
+
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +23,14 @@ export class MoviesService {
 
     if ( this.isGerman ) {
       baseUrl += `&language=de`;
+    }
+
+    if (this.lowVote){
+      baseUrl += '&vote_average.lte=5';
+    }
+
+    if (this.highVote){
+      baseUrl += '&vote_average.gte=6';
     }
 
    
