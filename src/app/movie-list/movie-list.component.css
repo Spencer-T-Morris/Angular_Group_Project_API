@@ -12,6 +12,12 @@
     background-color: rgba(238, 232, 213, 0.125);
     color:white;
     border:none;
+    background: none;
+}
+
+.favorite {
+    border: none;
+    background: none;
 }
 
 .card {
@@ -27,4 +33,7 @@
 button{
     background-color:rgba(238, 232, 213, 0.125);
     border: none;
+}
+.material-icons-red{
+    color:red;
 }
