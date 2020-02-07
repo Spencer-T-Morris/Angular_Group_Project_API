@@ -1,6 +1,6 @@
 <div class="card_container">
     <div class="card" *ngFor="let post of posts">
-        <button><i class="material-icons" *ngClass="red" >favorite</i></button>
+        <button><i class="material-icons">favorite</i></button>
         <h1>{{post.title}}</h1>
         <img src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" class="movie_poster"/>
     </div>
