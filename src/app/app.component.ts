@@ -8,10 +8,11 @@ import { Movies } from './movies';
 })
 export class AppComponent {
   title = 'movies-api';
-  
+  showOnStart = true
   show = false
   appear(){
-    this.show=!this.show
+    this.show=!this.show;
+    this.showOnStart=!this.showOnStart;
   }
 }
 
