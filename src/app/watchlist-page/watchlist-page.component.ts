@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Movies } from '../movies';
 import { MoviesService } from '../movies.service'
+
 @Component({
   selector: 'app-watchlist-page',
   templateUrl: './watchlist-page.component.html',

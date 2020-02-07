@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Movies } from './movies';
 import { MoviesService } from './movies.service';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,7 @@ import { MoviesService } from './movies.service';
 export class AppComponent {
   title = 'movies-api';
 
-  constructor(public service: MoviesService) { }
+  constructor(public service: MoviesService, private route: ActivatedRoute) { }
 
   fetchMovies() {
     this.service.getMovies();
