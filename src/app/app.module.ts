@@ -7,6 +7,7 @@ import { SearchCriteriaComponent } from './search-criteria/search-criteria.compo
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { WatchlistPageComponent } from './watchlist-page/watchlist-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { OverviewComponent } from './overview/overview.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     SearchCriteriaComponent,
     MovieListComponent,
-    WatchlistPageComponent
+    WatchlistPageComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,

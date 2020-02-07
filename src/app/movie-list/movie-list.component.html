@@ -3,6 +3,7 @@
         <button><i class="material-icons" >favorite</i></button>
         <h1>{{post.title}}</h1>
         <img src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" class="movie_poster"/>
+        <app-overview [post]="post" ></app-overview>
     </div>
 </div>
 

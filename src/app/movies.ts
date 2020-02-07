@@ -5,5 +5,6 @@ export interface Movies {
         popularity : number, 
         poster_path : string,
         original_language : string
+        overview : string;
     } [];
 }
