@@ -4,12 +4,10 @@ import { WatchlistPageComponent } from './watchlist-page/watchlist-page.componen
 import { AppComponent } from './app.component';
 import { SearchCriteriaComponent } from './search-criteria/search-criteria.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
+import { HomeComponent } from './home/home.component'
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component: AppComponent
-  },
+
   {
     path: 'watchlist',
     component: WatchlistPageComponent
@@ -21,6 +19,10 @@ const routes: Routes = [
   {
     path: 'movielist',
     component: MovieListComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   }
 ];
 
