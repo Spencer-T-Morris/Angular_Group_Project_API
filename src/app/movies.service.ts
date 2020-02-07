@@ -5,13 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class MoviesService {
-<<<<<<< HEAD
-  
   watchList = [];
-  
-=======
-  watchList = [];
->>>>>>> b1f364551d723fd21489b037aaafe7696c47a0d3
   baseUrl = "https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22&api_key=4d8fef2e8a014d827398469430bb0145"
 
   movies = [];
