@@ -11,6 +11,8 @@ export class MoviesService {
   movies = [];
 
   isGerman : boolean = false;
+  voteLow : number = 0;
+  
 
   constructor(private http: HttpClient) { }
 
@@ -21,6 +23,9 @@ export class MoviesService {
     if ( this.isGerman ) {
       baseUrl += `&language=de`;
     }
+
+   
+
 
     return this.http.get(baseUrl).subscribe( (data : any) => this.movies = data.results);
   }
