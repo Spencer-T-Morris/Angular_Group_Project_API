@@ -13,6 +13,8 @@ export class MoviesService {
   isGerman : boolean = false;
   lowVote : boolean = false;
   highVote : boolean = false;
+  popular : boolean = false;
+  notPopular : boolean = false;
 
 
   constructor(private http: HttpClient) { }
@@ -33,7 +35,13 @@ export class MoviesService {
       baseUrl += '&vote_average.gte=6';
     }
 
-   
+    if (this.popular){
+      baseUrl += '&vote_count.gte=40';
+    }
+
+    if (this.notPopular){
+      baseUrl += '&vote_count.lte=35';
+    }
 
 
     return this.http.get(baseUrl).subscribe( (data : any) => this.movies = data.results);
