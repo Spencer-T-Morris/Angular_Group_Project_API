@@ -7,7 +7,10 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { HomeComponent } from './home/home.component'
 
 const routes: Routes = [
-
+  {
+    path: 'app',
+    component: AppComponent
+  },
   {
     path: 'watchlist',
     component: WatchlistPageComponent

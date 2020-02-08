@@ -48,6 +48,5 @@ export class MoviesService {
   }
   addToWatchList(post){
     this.watchList.push(post)
-    console.log(this.watchList)
   }
 }

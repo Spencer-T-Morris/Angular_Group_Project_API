@@ -14,11 +14,19 @@ export class WatchlistPageComponent implements OnInit {
   @Input()
   movies : Movies[]=[];
   watchlist: Movies[]=[];
+
+  @Input()
+  open : boolean = true;
+
   constructor(public service: MoviesService) { 
   }
 
   ngOnInit(): void {
     this.posts=this.service.watchList
+  }
+
+  closePopout(){
+    this.open = false;
   }
  
 }
