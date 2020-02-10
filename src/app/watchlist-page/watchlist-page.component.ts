@@ -25,8 +25,8 @@ export class WatchlistPageComponent implements OnInit {
     this.posts=this.service.watchList
   }
 
-  closePopout(){
-    this.open = false;
+  closePopout(i){
+    this.posts.splice(i, 1);
   }
  
 }

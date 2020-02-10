@@ -19,7 +19,7 @@ export class AppComponent {
     this.service.getMovies();
   }
   
-  showOnStart = true;
+  showOnStart = false;
   show = false;
   appear(){
     this.show=!this.show;
